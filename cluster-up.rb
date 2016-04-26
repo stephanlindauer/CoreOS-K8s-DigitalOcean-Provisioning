@@ -118,11 +118,6 @@ end
 @client.droplets.create(build_droplet("coreos-k8s-master", true))
 @client.droplets.create(build_droplet("coreos-k8s-minion-1", false))
 @client.droplets.create(build_droplet("coreos-k8s-minion-2", false))
-@client.droplets.create(build_droplet("coreos-k8s-minion-3", false))
-@client.droplets.create(build_droplet("coreos-k8s-minion-4", false))
-@client.droplets.create(build_droplet("coreos-k8s-minion-5", false))
-@client.droplets.create(build_droplet("coreos-k8s-minion-6", false))
-@client.droplets.create(build_droplet("coreos-k8s-minion-7", false))
 
 puts "droplet created"
 puts "waiting 20 sec for the nodes to come up"
