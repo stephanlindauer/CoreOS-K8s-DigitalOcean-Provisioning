@@ -4,9 +4,9 @@ private_ips=$1
 echo $private_ips
 
 cd
-git clone --depth=1 https://github.com/stephanlindauer/kubernetes-binaries
+git clone --depth=1 https://github.com/stephanlindauer/coreos-k8s-digitalocean-provisioning
 mkdir -p /opt/bin
-mv kubernetes-binaries/* /opt/bin/
+mv binaries/* /opt/bin/
 echo "done setting up binaries"
 
 if [[ $(hostname) == coreos-k8s-master ]]; then
