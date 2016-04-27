@@ -6,7 +6,7 @@ echo $private_ips
 cd
 git clone --depth=1 https://github.com/stephanlindauer/coreos-k8s-digitalocean-provisioning
 mkdir -p /opt/bin
-mv binaries/* /opt/bin/
+mv coreos-k8s-digitalocean-provisioning/binaries/* /opt/bin/
 echo "done setting up binaries"
 
 if [[ $(hostname) == coreos-k8s-master ]]; then

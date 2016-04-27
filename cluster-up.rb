@@ -41,11 +41,17 @@ def parse_files(should_include_master_services)
       "content" => File.read("services/scheduler.service")
     },
     {
-          "path" => "/etc/systemd/system/flannel.service",
-          "permissions" => "0644",
-          "owner" => "root",
-          "content" => File.read("services/flannel.service")
-        }
+      "path" => "/etc/systemd/system/flannel.service",
+      "permissions" => "0644",
+      "owner" => "root",
+      "content" => File.read("services/flannel.service")
+    },
+    {
+      "path" => "/home/core/apache.json",
+      "permissions" => "0644",
+      "owner" => "root",
+      "content" => File.read("apache.json")
+    },
   ]
   if should_include_master_services
     services.push({
