@@ -1,5 +1,4 @@
-# Critical Mass Android App
-
+# CoreOS Kubernetes on DigitalOcean Provisioning
 ## How to run this thing
 
 Get your DigitalOcean Access Token and start the script like so:
